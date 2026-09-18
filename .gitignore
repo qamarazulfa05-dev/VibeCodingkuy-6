@@ -1,6 +1,0 @@
-node_modules/
-.env
-*.log
-
-# Data hasil peminjaman yang dibuat runtime (bukan seed awal)
-services/library-service/data/loans.json
