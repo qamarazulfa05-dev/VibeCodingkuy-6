@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+
+  auth-service:
+    build: ./services/auth-service
+    container_name: auth-service
+    ports:
+      - "4001:4001"
+    environment:
+      - PORT=4001
+      - JWT_SECRET=ganti-dengan-secret-yang-aman
+    restart: unless-stopped
+
+  library-service:
+    build: ./services/library-service
+    container_name: library-service
+    ports:
+      - "4002:4002"
+    environment:
+      - PORT=4002
+      - AUTH_SERVICE_URL=http://auth-service:4001
+    depends_on:
+      - auth-service
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - auth-service
+      - library-service
+    restart: unless-stopped
