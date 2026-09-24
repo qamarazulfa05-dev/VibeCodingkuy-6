@@ -1,0 +1,447 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4f6f8;
+
+    color: #222;
+}
+
+
+/* ========================================
+   HIDDEN
+======================================== */
+
+.hidden {
+    display: none !important;
+}
+
+
+/* ========================================
+   LOGIN
+======================================== */
+
+.login-container {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 700px;
+
+    background: white;
+
+    border: 1px solid #d7d7d7;
+
+    border-radius: 16px;
+
+    padding: 40px;
+}
+
+.login-card h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    font-size: 42px;
+}
+
+.login-description {
+    font-size: 20px;
+
+    margin-bottom: 30px;
+}
+
+.login-card label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 20px;
+
+    font-weight: 500;
+}
+
+.login-card input {
+    width: 100%;
+
+    padding: 16px;
+
+    margin-bottom: 22px;
+
+    border: 1px solid #bbb;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    outline: none;
+}
+
+.login-card input:focus {
+    border-color: #2876e8;
+}
+
+.login-button {
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2876e8;
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: #1765d4;
+}
+
+.error-message {
+    min-height: 24px;
+
+    margin-top: 15px;
+
+    color: #c62828;
+
+    font-weight: bold;
+}
+
+.service-status {
+    margin-top: 20px;
+
+    font-size: 13px;
+
+    color: #888;
+
+    text-align: center;
+}
+
+.service-status .status-ok {
+    color: #16833a;
+
+    font-weight: bold;
+}
+
+.service-status .status-down {
+    color: #b02a2a;
+
+    font-weight: bold;
+}
+
+
+/* ========================================
+   HALAMAN UTAMA
+======================================== */
+
+.main-container {
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 35px;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 30px;
+
+    margin-bottom: 35px;
+}
+
+.header-info h1 {
+    margin: 0 0 20px;
+
+    font-size: 42px;
+}
+
+.student-info {
+    margin: 8px 0;
+
+    font-size: 20px;
+}
+
+.header-buttons {
+    display: flex;
+
+    gap: 10px;
+
+    align-items: center;
+}
+
+
+/* ========================================
+   TOMBOL RESTART
+======================================== */
+
+.restart-button {
+    padding: 14px 20px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #d97706;
+
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+.restart-button:hover {
+    background: #b45309;
+}
+
+
+/* ========================================
+   TOMBOL LOGOUT
+======================================== */
+
+.logout-button {
+    padding: 14px 24px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #555;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background: #333;
+}
+
+
+/* ========================================
+   CARD KONTEN
+======================================== */
+
+.content-card {
+    background: white;
+
+    border: 1px solid #d7d7d7;
+
+    border-radius: 16px;
+
+    padding: 35px;
+
+    margin-bottom: 30px;
+}
+
+.content-card h2 {
+    margin-top: 0;
+
+    margin-bottom: 30px;
+
+    font-size: 32px;
+}
+
+
+/* ========================================
+   DAFTAR BUKU
+======================================== */
+
+.book-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.book-card {
+    border: 1px solid #d6d6d6;
+
+    border-radius: 12px;
+
+    padding: 24px;
+
+    background: #fff;
+}
+
+.book-title {
+    margin: 0 0 10px;
+
+    font-size: 25px;
+}
+
+.book-author {
+    margin: 0 0 10px;
+
+    font-size: 18px;
+}
+
+.book-status {
+    margin: 10px 0 18px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+.status-available {
+    color: #16833a;
+}
+
+.status-borrowed {
+    color: #b02a2a;
+}
+
+
+/* ========================================
+   TOMBOL PINJAM
+======================================== */
+
+.borrow-button {
+    padding: 11px 20px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #2876e8;
+
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+.borrow-button:hover:not(:disabled) {
+    background: #1765d4;
+}
+
+.borrow-button:disabled {
+    background: #b5b5b5;
+
+    color: #666;
+
+    cursor: not-allowed;
+}
+
+
+/* ========================================
+   INFORMASI PEMINJAMAN
+======================================== */
+
+.loan-item {
+    padding: 20px 0;
+
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.loan-item:last-child {
+    border-bottom: none;
+}
+
+.loan-title {
+    margin-bottom: 12px;
+
+    font-size: 23px;
+
+    font-weight: bold;
+}
+
+.loan-date {
+    margin: 8px 0;
+
+    font-size: 17px;
+}
+
+.empty-loan {
+    color: #666;
+
+    font-size: 18px;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .main-container {
+        padding: 20px;
+    }
+
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-card {
+        padding: 25px;
+    }
+
+    .login-card h1,
+    .header-info h1 {
+        font-size: 32px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header-buttons {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .restart-button,
+    .logout-button {
+        width: 100%;
+    }
+
+    .content-card {
+        padding: 22px;
+    }
+
+    .content-card h2 {
+        font-size: 27px;
+    }
+
+}
