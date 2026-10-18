@@ -23,7 +23,7 @@ Arsitektur: `Client (Postman) → HTTP/JSON → Backend API (Laravel) → MySQL`
 
 1. Buat database kosong:
    ```sql
-   CREATE DATABASE perpustakaan CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+   CREATE DATABASE perpustakaan_uts CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
    ```
 2. Salin konfigurasi lalu sesuaikan `DB_USERNAME` / `DB_PASSWORD` bila perlu:
    ```bash
