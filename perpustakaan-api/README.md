@@ -30,7 +30,7 @@ Arsitektur: `Client (Postman) → HTTP/JSON → Backend API (Laravel) → MySQL`
    cd backend
    cp .env.example .env        # Windows: copy .env.example .env
    ```
-   Nilai bawaan: host `127.0.0.1`, port `3306`, database `perpustakaan`, user `root`, password kosong.
+   Nilai bawaan: host `127.0.0.1`, port `3306`, database `perpustakaan_uts`, user `root`, password kosong.
 
 Skema referensi ada di `database/schema.sql` dan diagram di `database/ERD.md`.
 
