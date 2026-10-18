@@ -7,7 +7,7 @@ Arsitektur: `Client (Postman) → HTTP/JSON → Backend API (Laravel) → MySQL`
 
 ## Technology Stack
 
-- PHP 8.3+, Laravel 13, Laravel Sanctum (Bearer token)
+- PHP 8.5.5, Laravel 13, Laravel Sanctum (Bearer token)
 - MySQL / MariaDB
 - Postman (collection) dan PHPUnit (tes otomatis)
 
